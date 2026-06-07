@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.Modding;
 using MegaCrit.Sts2.Core.Models;
 using System.Reflection;
 
-namespace evanward.power10x;
+namespace EvanWard.Power10x;
 
 [HarmonyPatch(typeof(Hook), nameof(Hook.ModifyPowerAmountGiven))]
 public static class PowerPatch

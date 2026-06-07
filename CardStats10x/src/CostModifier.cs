@@ -5,7 +5,7 @@ using MegaCrit.Sts2.Core.Modding;
 using MegaCrit.Sts2.Core.Models;
 using System.Reflection;
 
-namespace evanward.cardstats10x;
+namespace EvanWard.CardStats10x;
 
 [HarmonyPatch]
 public static class CardCostCanonicalPatch

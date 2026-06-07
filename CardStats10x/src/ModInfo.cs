@@ -3,7 +3,7 @@ using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Modding;
 using System.Text.Json.Nodes;
 
-namespace evanward.cardstats10x;
+namespace EvanWard.CardStats10x;
 
 public static class ModInfo
 {

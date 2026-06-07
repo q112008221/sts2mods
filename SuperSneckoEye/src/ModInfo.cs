@@ -3,17 +3,17 @@ using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Modding;
 using System.Text.Json.Nodes;
 
-namespace EvanWard.Power10x;
+namespace EvanWard.SuperSneckoEye;
 
 public static class ModInfo
 {
     public const string AuthorName = "EvanWard";
-    public const string ModName = "Power10x";
+    public const string ModName = "SuperSneckoEye";
 
     public static ModParam ModParam => _modParam;
     private static ModParam _modParam = new()
     {
-        Multiplier = 10
+        DynamicVarRange = 15,
     };
 
     public static void InitModParam()
@@ -42,14 +42,14 @@ public static class ModInfo
             {
                 return;
             }
-            JsonNode? multiplierNode = configNode["multiplier"];
-            if (multiplierNode == null)
+            JsonNode? dynamicVarRangeNode = configNode["dynamic_var_range"];
+            if (dynamicVarRangeNode == null)
             {
                 return;
             }
-            int multiplier = multiplierNode.GetValue<int>();
-            _modParam.Multiplier = multiplier;
-            ModLogger.Info($"Config loaded successfully, multiplier: {_modParam.Multiplier}");
+            int dynamicVarRange = dynamicVarRangeNode.GetValue<int>();
+            _modParam.DynamicVarRange = dynamicVarRange;
+            ModLogger.Info($"Config loaded successfully, dynamicVarRange: {_modParam.DynamicVarRange}");
         }
         catch (Exception e)
         {
@@ -60,7 +60,7 @@ public static class ModInfo
 
 public struct ModParam
 {
-    public int Multiplier;
+    public int DynamicVarRange;
 }
 
 public static class ModLogger

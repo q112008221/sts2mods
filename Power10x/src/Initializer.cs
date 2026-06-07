@@ -2,7 +2,7 @@
 using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Modding;
 
-namespace evanward.power10x;
+namespace EvanWard.Power10x;
 
 [ModInitializer(nameof(Initialize))]
 public static class Initializer

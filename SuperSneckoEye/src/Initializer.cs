@@ -1,8 +1,9 @@
 ﻿using HarmonyLib;
 using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Modding;
+using MegaCrit.Sts2.Core.Models.RelicPools;
 
-namespace EvanWard.CardStats10x;
+namespace EvanWard.SuperSneckoEye;
 
 [ModInitializer(nameof(Initialize))]
 public static class Initializer
@@ -14,6 +15,7 @@ public static class Initializer
         {
             var harmony = new Harmony($"{ModInfo.AuthorName}.{ModInfo.ModName}");
             harmony.PatchAll();
+            ModHelper.AddModelToPool<SharedRelicPool, SuperSneckoEye>();
         }
         catch (Exception e)
         {

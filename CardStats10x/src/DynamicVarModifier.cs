@@ -2,7 +2,7 @@
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 
-namespace evanward.cardstats10x;
+namespace EvanWard.CardStats10x;
 
 [HarmonyPatch(typeof(DynamicVar), nameof(DynamicVar.SetOwner))]
 public static class DynamicVarSetOwnerPatch
