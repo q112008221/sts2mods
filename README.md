@@ -9,7 +9,7 @@
 欢迎使用本 Mod！请按照以下步骤安装：
 
 1. **下载 Release 包**  
-   前往本仓库的 [Releases](https://github.com/q112008221/sts2mods/releases/) 页面，下载最新版本的压缩包（zip 或 rar 格式）。
+   前往本仓库的 [Releases](https://github.com/q112008221/sts2mods/releases/) 页面，下载最新版本的压缩包。
 
 2. **解压文件**  
    将下载的压缩包解压，得到 Mod 文件夹。
@@ -35,6 +35,7 @@
 - 游戏相关依赖：
 - `0Harmony.dll`
 - `sts2.dll`（游戏核心库）
+- `GodotSharp.dll`
 
 ### 编译步骤
 
@@ -45,6 +46,7 @@
 - 在项目中引用以下 DLL 文件：
 - 0Harmony.dll
 - sts2.dll（位于游戏目录下）
+- GodotSharp.dll
 
 3. **编译 Mod**
 
